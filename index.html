@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset=utf-8>
+<meta name=format-detection content="telephone=no">
+<meta name=msapplication-tap-highlight content=no>
+<meta name=viewport content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width">
+<meta name=twitter:card content=summary>
+<meta name=twitter:site content=@quasarframework>
+<meta property=og:type content=article>
+<meta property=og:image content=https://cdn.quasar.dev/logo-v2/512/logo.png>
+<meta property=og:site_name content="Quasar Framework">
+<link rel=icon type=image/png sizes=128x128 href=https://cdn.quasar.dev/logo-v2/favicon/favicon-128x128.png>
+<link rel=icon type=image/png sizes=96x96 href=https://cdn.quasar.dev/logo-v2/favicon/favicon-96x96.png>
+<link rel=icon type=image/png sizes=32x32 href=https://cdn.quasar.dev/logo-v2/favicon/favicon-32x32.png>
+<link rel=icon type=image/png sizes=16x16 href=https://cdn.quasar.dev/logo-v2/favicon/favicon-16x16.png>
+<link rel=icon type=image/ico href=https://cdn.quasar.dev/logo-v2/favicon/favicon.ico>
+<link rel=apple-touch-startup-image media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3)" href=https://cdn.quasar.dev/logo-v2/favicon/apple-launch-1284x2778.png>
+<link rel=apple-touch-startup-image media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3)" href=https://cdn.quasar.dev/logo-v2/favicon/apple-launch-1170x2532.png>
+<link rel=apple-touch-startup-image media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" href=https://cdn.quasar.dev/logo-v2/favicon/apple-launch-828x1792.png>
+<link rel=apple-touch-startup-image media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" href=https://cdn.quasar.dev/logo-v2/favicon/apple-launch-1125x2436.png>
+<link rel=apple-touch-startup-image media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" href=https://cdn.quasar.dev/logo-v2/favicon/apple-launch-1242x2688.png>
+<link rel=apple-touch-startup-image media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href=https://cdn.quasar.dev/logo-v2/favicon/apple-launch-750x1334.png>
+<link rel=apple-touch-startup-image media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3)" href=https://cdn.quasar.dev/logo-v2/favicon/apple-launch-1242x2208.png>
+<link rel=apple-touch-startup-image media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2)" href=https://cdn.quasar.dev/logo-v2/favicon/apple-launch-1620x2160.png>
+<link rel=apple-touch-startup-image media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" href=https://cdn.quasar.dev/logo-v2/favicon/apple-launch-1536x2048.png>
+<link rel=apple-touch-startup-image media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" href=https://cdn.quasar.dev/logo-v2/favicon/apple-launch-1668x2224.png>
+<link rel=apple-touch-startup-image media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" href=https://cdn.quasar.dev/logo-v2/favicon/apple-launch-1668x2388.png>
+<link rel=apple-touch-startup-image media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" href=https://cdn.quasar.dev/logo-v2/favicon/apple-launch-2048x2732.png>
+<link rel=manifest href=manifest.json>
+<meta name=theme-color content=#00B4FF>
+<meta name=apple-mobile-web-app-capable content=yes>
+<meta name=apple-mobile-web-app-status-bar-style content=default>
+<meta name=apple-mobile-web-app-title content="Quasar v2 Docs">
+<link rel=apple-touch-icon href=https://cdn.quasar.dev/logo-v2/favicon/apple-icon-120x120.png>
+<link rel=apple-touch-icon sizes=152x152 href=https://cdn.quasar.dev/logo-v2/favicon/apple-icon-152x152.png>
+<link rel=apple-touch-icon sizes=167x167 href=https://cdn.quasar.dev/logo-v2/favicon/apple-icon-167x167.png>
+<link rel=apple-touch-icon sizes=180x180 href=https://cdn.quasar.dev/logo-v2/favicon/apple-icon-180x180.png>
+<link rel=mask-icon href=https://cdn.quasar.dev/logo-v2/favicon/safari-pinned-tab.svg color=#00B4FF>
+<meta name=msapplication-TileImage content=https://cdn.quasar.dev/logo-v2/favicon/ms-icon-144x144.png>
+<meta name=msapplication-TileColor content=#000000>
+<title>QQQ</title>
+<link href='https://fonts.googleapis.com/css?family=Donegal+One|Lily+Script+One' rel='stylesheet' type='text/css'>
+<link href="style/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+<h1>To do list</h1>
+
+<div class="task-box">
+
+<ul id="task-list">
+
+</div>
+
+</ul>
+
+<div class="form-box">
+<h2>Add new to do.</h2>
+
+<form id="task-form" action="index.html">
+  <div class="full-width">
+    <label for="title">Task title:</label>
+    <input type="text" id="title" required>
+  </div>
+  <div class="half-width">
+    <label for="deadline-hours">Hours (hh):</label>
+    <input type="number" id="deadline-hours" required>
+  </div>
+  <div class="half-width">
+    <label for="deadline-minutes">Mins (mm):</label>
+    <input type="number" id="deadline-minutes" required>
+  </div>
+  <div class="third-width">
+    <label for="deadline-day">Day:</label>
+        <select id="deadline-day" required>
+          <option value="01">01</option>
+          <option value="02">02</option>
+          <option value="03">03</option>
+          <option value="04">04</option>
+          <option value="05">05</option>
+          <option value="06">06</option>
+          <option value="07">07</option>
+          <option value="08">08</option>
+          <option value="09">09</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+          <option value="25">25</option>
+          <option value="26">26</option>
+          <option value="27">27</option>
+          <option value="28">28</option>
+          <option value="29">29</option>
+          <option value="30">30</option>
+          <option value="31">31</option>
+        </select>
+      </div>
+
+  <div class="third-width">
+    <label for="deadline-month">Month:</label>
+       <select id="deadline-month" required>
+         <option value="January">January</option>
+         <option value="February">February</option>
+         <option value="March">March</option>
+         <option value="April">April</option>
+         <option value="May">May</option>
+         <option value="June">June</option>
+         <option value="July">July</option>
+         <option value="August">August</option>
+         <option value="September">September</option>
+         <option value="October">October</option>
+         <option value="November">November</option>
+         <option value="December">December</option>
+       </select>
+      </div>
+
+  <div class="third-width">
+    <label for="deadline-year">Year:</label>
+       <select id="deadline-year" required>
+	 <option value="2025">2025</option>
+         <option value="2024">2024</option>
+         <option value="2023">2023</option>
+         <option value="2022">2022</option>
+         <option value="2021">2021</option>
+         <option value="2020">2020</option>
+         <option value="2019">2019</option>
+         <option value="2018">2018</option>
+       </select>
+      </div>
+
+  <div>
+    <input type="submit" id="submit" value="Add Task">
+  </div>
+  <div>
+
+  </div>
+</form>
+</div>
+
+<div id="toolbar">
+  <ul id="notifications">
+
+  </ul>
+
+  <button id="enable">
+    Enable notifications
+  </button>
+</div>
+
+</body>
+
+<script src="scripts/todo.js"></script>
+<script>
+      if('serviceWorker' in navigator) {
+        navigator.serviceWorker
+            .register('/sw.js')
+            .then(function() { console.log("Tada! Your service worker is now registered"); });
+    }
+</script>
+
+</html>
